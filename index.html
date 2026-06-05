@@ -998,7 +998,7 @@
             <label for="luaFile">Pilih File Lua</label>
             <input type="file" id="luaFile" accept=".lua">
           </div>
-          <button class="secure-button" onclick="scanKeylogger()">🔍 Scan File</button>
+          <button class="secure-button" onclick="scanKeylogger()">Scan File</button>
           <div id="scanResult" style="margin-top:15px;display:none;">
             <div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
               <h4 id="scanTitle" style="margin-bottom:10px;color:var(--primary);"></h4>
@@ -2092,7 +2092,7 @@ async function scanKeylogger() {
     const analysis = analyzeLuaCode(code);
 
     // Step 2: Kirim hasil analisis ke Groq AI untuk kesimpulan
-    showToast('🤖 Membuat kesimpulan...');
+    showToast('Membuat kesimpulan...');
 
     // Buat summary dari analisis
     const analysisSummary = {
