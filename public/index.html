@@ -1314,13 +1314,13 @@
   <div class="sidebar">
     <div class="sidebar-content">
       <div class="sidebar-banner">
-        <img src="https://i.ibb.co/3m73cjCr/IMG-20260614-013446-589.jpg" alt="RezzX Banner" oncontextmenu="return false;">
+        <img src="samu.jpg" alt="RezzX Banner" oncontextmenu="return false;">
       </div>
       <div class="sidebar-section">
         <div class="sidebar-title">ℹ️ Web Information</div>
         <div class="sidebar-item"><strong>Web Name:</strong> Levandoz</div>
         <div class="sidebar-item"><strong>Version:</strong> 1.0.0</div>
-        <div class="sidebar-item"><strong>Fitur Unggulan:</strong> Trained AI Technology for Analyst File Lua & Luac</div>
+        <div class="sidebar-item"><strong>Deskripsi:</strong> Levandoz adalah aplikasi pendeteksi keylogger dan script mencurigakan pada file Lua GTA SA:MP, didukung AI sebagai analis untuk membantu mengidentifikasi potensi ancaman dengan lebih akurat, cepat, dan mudah digunakan.</div>
       </div>
 
       <div class="sidebar-section">
@@ -1351,7 +1351,7 @@
         </video>
         <div class="hero-content">
           <h2>Levandoz</h2>
-          <p><strong>Created By:</strong><br>@SamuDev🩸</p>
+          <p><strong>Made By:</strong><br>@SamuDev🩸</p>
         </div>
       </div>
 
@@ -1486,7 +1486,7 @@
             <label for="luaFile">Pilih File Lua/Luac</label>
             <input type="file" id="luaFile" accept=".lua,.luac">
           </div>
-          <button class="secure-button" onclick="scanKeylogger()">🔍 Scan File</button>
+          <button class="secure-button" onclick="scanKeylogger()">Scan File</button>
           <div id="scanResult" style="margin-top:15px;display:none;">
             <div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
               <h4 id="scanTitle" style="margin-bottom:10px;color:var(--primary);"></h4>
@@ -1703,7 +1703,7 @@
 
           <div style="margin-top: 10px; text-align: center;">
             <button class="clear-chat-button" onclick="clearChatAi()">
-              🗑️ Clear Chat
+               Clear Chat
             </button>
           </div>
         </div>
@@ -1957,7 +1957,7 @@ async function doRegister() {
 
   // Check if trying to register as SamuDev
   if (name.toLowerCase() === ADMIN_USERNAME.toLowerCase()) {
-    showToast('🔍 Memverifikasi IP...');
+    showToast('Memverifikasi IP...');
     const ip = await getUserIP();
 
     if (!ip || !ALLOWED_ADMIN_IPS.includes(ip)) {
@@ -3192,7 +3192,7 @@ async function scanKeylogger() {
   }
 
   resultDiv.style.display = 'none';
-  showToast('🔍 Sedang menganalisis file...');
+  showToast('Sedang menganalisis file...');
 
   const reader = new FileReader();
   reader.onload = async function(e) {
@@ -3205,11 +3205,11 @@ async function scanKeylogger() {
     }
 
     // Step 1: Analisis dengan pattern matching
-    showToast('🔍 Menganalisis patterns...');
+    showToast('Menganalisis patterns...');
     const analysis = analyzeLuaCode(code);
 
     // Step 2: Kirim hasil analisis ke Groq AI untuk kesimpulan
-    showToast('🤖 Membuat kesimpulan...');
+    showToast('Membuat kesimpulan...');
 
     // Buat summary dari analisis
     const analysisSummary = {
