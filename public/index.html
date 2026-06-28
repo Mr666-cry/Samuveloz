@@ -1421,7 +1421,7 @@
       </div>
       <div class="stats">
         <div class="stat"><strong class="primary" id="onlineCount">0</strong><span>User Online</span></div>
-        <div class="stat" onclick="openChatAiPanel()" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;color:var(--accent);"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5A2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 2.5 2.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5M9 5H9V7h6V5H9"/></svg><span style="font-size:11px;color:var(--muted);">AI Chatbot</span></div>
+        <div class="stat" onclick="openCsAiPanel()" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;color:var(--accent);"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5A2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 2.5 2.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5M9 5H9V7h6V5H9"/></svg><span style="font-size:11px;color:var(--muted);">CS AI</span></div>
       </div>
 
       <div class="card wide" onclick="openMusicPanel()" style="margin-top:14px;">
@@ -1442,6 +1442,39 @@
           <div><h3>Tips & Trick</h3><span>Keylogger Blocker</span></div>
         </div>
         <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </div>
+
+      <!-- KEYLOGGER FEATURES MENU -->
+      <h3 style="color:var(--muted);font-size:12px;margin:14px 0 10px;text-align:center;letter-spacing:2px;text-transform:uppercase;">Keylogger Tools</h3>
+      <div class="grid" style="margin-bottom:14px;">
+        <div class="card" onclick="openKeyloggerDatabase()">
+          <div class="card-icon icon-primary">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3>KL Database</h3>
+          <span>Known Patterns</span>
+        </div>
+        <div class="card" onclick="openKeyloggerReport()">
+          <div class="card-icon icon-accent">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          </div>
+          <h3>KL Report</h3>
+          <span>Report Keylogger</span>
+        </div>
+        <div class="card" onclick="openKeyloggerRealtime()">
+          <div class="card-icon icon-primary">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          </div>
+          <h3>Realtime Guard</h3>
+          <span>Protection Status</span>
+        </div>
+        <div class="card" onclick="openKeyloggerEducational()">
+          <div class="card-icon icon-accent">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          </div>
+          <h3>KL Education</h3>
+          <span>Learn & Protect</span>
+        </div>
       </div>
     </div>
 
@@ -1659,7 +1692,7 @@
       </div>
     </div>
 
-    <!-- CHAT AI -->
+    <!-- CS AI (CUSTOMER SERVICE AI) -->
     <div class="menu-content" id="chat-ai-content">
       <button class="back-button" onclick="closeChatAiPanel()">
         <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
@@ -1668,19 +1701,19 @@
       <div style="padding: 10px 0;">
         <div class="ai-status-badge">
           <div class="ai-status-dot"></div>
-          <span>Powered by Groq AI</span>
+          <span id="aiStatusText">CS AI Online</span>
         </div>
 
         <div class="chat-ai-container">
           <div class="chat-ai-messages" id="chatAiMessages">
             <div class="ai-welcome-card" id="aiWelcomeCard">
-              <h3>🤖 Welcome to AI Chat!</h3>
-              <p>Saya adalah AI assistant yang siap membantu Anda. Tanyakan apa saja!</p>
+              <h3>🛎️ CS AI - Customer Service</h3>
+              <p>Halo! Saya adalah Customer Service AI yang siap membantu Anda tentang Keylogger. Tanyakan apa itu keylogger, cara kerjanya, cara mengatasinya, dan tips perlindungan!</p>
               <div class="ai-quick-actions">
-                <div class="ai-quick-action" onclick="sendQuickMessage('Siapa kamu?')">Siapa kamu?</div>
-                <div class="ai-quick-action" onclick="sendQuickMessage('Buatkan coding')">Buatkan coding</div>
-                <div class="ai-quick-action" onclick="sendQuickMessage('Jelaskan coding')">Jelaskan coding</div>
-                <div class="ai-quick-action" onclick="sendQuickMessage('Tips coding')">Tips coding</div>
+                <div class="ai-quick-action" onclick="sendQuickMessage('Apa itu keylogger?')">Apa itu keylogger?</div>
+                <div class="ai-quick-action" onclick="sendQuickMessage('Cara mengatasi keylogger')">Cara mengatasi keylogger</div>
+                <div class="ai-quick-action" onclick="sendQuickMessage('Ciri-ciri file terinfeksi keylogger')">Ciri-ciri terinfeksi</div>
+                <div class="ai-quick-action" onclick="sendQuickMessage('Tips mencegah keylogger')">Tips pencegahan</div>
               </div>
             </div>
           </div>
@@ -1689,12 +1722,12 @@
             <textarea
               class="chat-ai-input"
               id="chatAiInput"
-              placeholder="Ketik pesan Anda..."
+              placeholder="Tanyakan tentang keylogger..."
               rows="1"
               onkeydown="handleChatAiKeyDown(event)"
               oninput="autoResizeTextarea(this)"
             ></textarea>
-            <button class="chat-ai-send-button" id="chatAiSendButton" onclick="sendChatAiMessage()">
+            <button class="chat-ai-send-button" id="chatAiSendButton" onclick="sendCsAiMessage()">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
               </svg>
@@ -1705,6 +1738,120 @@
             <button class="clear-chat-button" onclick="clearChatAi()">
                Clear Chat
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEYLOGGER DATABASE -->
+    <div class="menu-content" id="keylogger-database-content">
+      <button class="back-button" onclick="closeKeyloggerDatabase()">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back to Dashboard
+      </button>
+      <div style="padding: 20px 0;">
+        <div class="manage-sender-form">
+          <h3>📋 Keylogger Database</h3>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:15px;">Database pola-pola keylogger yang telah diketahui dan terdeteksi</p>
+          <div id="keyloggerDbList" style="display:flex;flex-direction:column;gap:10px;max-height:400px;overflow-y:auto;padding-right:4px;">
+            <!-- Database entries will be rendered here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEYLOGGER REPORT -->
+    <div class="menu-content" id="keylogger-report-content">
+      <button class="back-button" onclick="closeKeyloggerReport()">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back to Dashboard
+      </button>
+      <div style="padding: 20px 0;">
+        <div class="manage-sender-form">
+          <h3>📝 Report Keylogger</h3>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:15px;">Laporkan file atau URL keylogger yang Anda temukan</p>
+          <div class="form-group">
+            <label for="reportFileName">Nama File / URL</label>
+            <input type="text" id="reportFileName" placeholder="Contoh: hack.lua atau https://...">
+          </div>
+          <div class="form-group">
+            <label for="reportDescription">Deskripsi</label>
+            <textarea id="reportDescription" placeholder="Jelaskan mengapa Anda yakin ini keylogger..." rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="reportType">Tipe</label>
+            <select id="reportType" style="width:100%;padding:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:var(--primary);font-size:16px;font-family:'Orbitron',monospace;">
+              <option value="file">File Lua/Luac</option>
+              <option value="url">URL / Link</option>
+              <option value="discord">Discord Webhook</option>
+              <option value="other">Lainnya</option>
+            </select>
+          </div>
+          <button class="secure-button" onclick="submitKeyloggerReport()">Kirim Laporan</button>
+          <div id="reportStatus" style="margin-top:15px;text-align:center;color:var(--muted);font-size:13px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REALTIME GUARD -->
+    <div class="menu-content" id="keylogger-realtime-content">
+      <button class="back-button" onclick="closeKeyloggerRealtime()">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back to Dashboard
+      </button>
+      <div style="padding: 20px 0;">
+        <div class="manage-sender-form">
+          <h3>🛡️ Realtime Guard</h3>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:15px;">Status proteksi real-time sistem Anda</p>
+          <div style="text-align:center;padding:20px;background:var(--card-soft);border-radius:16px;border:1px solid rgba(255,255,255,0.1);margin-bottom:15px;">
+            <div id="guardStatusIcon" style="width:80px;height:80px;border-radius:50%;background:rgba(74,222,128,0.2);border:3px solid var(--success);display:flex;align-items:center;justify-content:center;margin:0 auto 15px;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:40px;height:40px;color:var(--success);"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
+            <h4 id="guardStatusText" style="color:var(--success);font-size:18px;margin-bottom:8px;">PROTECTED</h4>
+            <p id="guardStatusDesc" style="color:var(--muted);font-size:13px;">Sistem Anda dalam keadaan aman</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;">
+              <span style="color:var(--muted);font-size:13px;">🖥️ Sistem Monitoring</span>
+              <span id="sysMonitorStatus" style="color:var(--success);font-size:13px;font-weight:600;">Aktif</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;">
+              <span style="color:var(--muted);font-size:13px;">⌨️ Keyboard Hook Detection</span>
+              <span id="kbHookStatus" style="color:var(--success);font-size:13px;font-weight:600;">Aktif</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;">
+              <span style="color:var(--muted);font-size:13px;">🌐 Network Monitoring</span>
+              <span id="netMonitorStatus" style="color:var(--success);font-size:13px;font-weight:600;">Aktif</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;">
+              <span style="color:var(--muted);font-size:13px;">📋 Clipboard Protection</span>
+              <span id="clipboardProtectStatus" style="color:var(--success);font-size:13px;font-weight:600;">Aktif</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;">
+              <span style="color:var(--muted);font-size:13px;">🔍 File Scan Engine</span>
+              <span id="fileScanStatus" style="color:var(--success);font-size:13px;font-weight:600;">Aktif</span>
+            </div>
+          </div>
+          <div style="margin-top:15px;padding:12px;background:rgba(255,255,255,0.05);border-radius:10px;text-align:center;">
+            <span style="color:var(--muted);font-size:12px;">Terakhir diperbarui: </span>
+            <span id="lastUpdateTime" style="color:var(--primary);font-size:12px;font-weight:600;">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEYLOGGER EDUCATION -->
+    <div class="menu-content" id="keylogger-educational-content">
+      <button class="back-button" onclick="closeKeyloggerEducational()">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back to Dashboard
+      </button>
+      <div style="padding: 20px 0;">
+        <div class="manage-sender-form">
+          <h3>📚 Keylogger Education</h3>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:15px;">Pelajari cara kerja keylogger dan cara melindungi diri</p>
+          <div style="display:flex;flex-direction:column;gap:12px;max-height:450px;overflow-y:auto;padding-right:4px;" id="eduContentList">
+            <!-- Educational content rendered here -->
           </div>
         </div>
       </div>
@@ -1852,8 +1999,104 @@ function closeFloatingNotification() {
 
 // ============ AI CONFIGURATION ============
 // Groq untuk Chat AI dan Keylogger Detection
-const GROQ_API_KEY = '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';
+const GROQ_API_KEY = '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';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+
+// OpenRouter AI Fallback Configuration (Qwen Model)
+const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+
+// Helper function: Call Groq with automatic fallback to OpenRouter (Qwen)
+async function callAIWithFallback(apiMessages, temperature, maxTokens, isJsonFormat) {
+  temperature = temperature || 0.7;
+  maxTokens = maxTokens || 1000;
+  isJsonFormat = isJsonFormat || false;
+
+  // Try Groq first
+  try {
+    console.log('[AI] Trying Groq API...');
+
+    var groqBody = {
+      model: 'llama-3.3-70b-versatile',
+      messages: apiMessages,
+      temperature: temperature,
+      max_tokens: maxTokens
+    };
+
+    if (isJsonFormat) {
+      groqBody.response_format = { type: 'json_object' };
+    }
+
+    var response = await fetch(GROQ_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + GROQ_API_KEY
+      },
+      body: JSON.stringify(groqBody)
+    });
+
+    if (!response.ok) {
+      var errorData = await response.json().catch(function() { return {}; });
+      console.warn('[AI] Groq API error:', errorData);
+      throw new Error(errorData.error?.message || 'Groq HTTP ' + response.status);
+    }
+
+    var data = await response.json();
+    var content = data.choices?.[0]?.message?.content;
+
+    if (!content) {
+      throw new Error('Empty response from Groq');
+    }
+
+    console.log('[AI] Groq API success');
+    return { content: content, source: 'groq' };
+
+  } catch (groqError) {
+    console.warn('[AI] Groq failed, falling back to OpenRouter (Qwen):', groqError.message);
+
+    // Fallback to OpenRouter AI (Qwen model)
+    try {
+      console.log('[AI] Trying OpenRouter API...');
+
+      var openrouterResponse = await fetch(OPENROUTER_API_URL, {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + OPENROUTER_API_KEY,
+          'Content-Type': 'application/json',
+          'HTTP-Referer': 'https://levandoz.local',
+          'X-Title': 'Levandoz App'
+        },
+        body: JSON.stringify({
+          model: 'nvidia/nemotron-3-ultra-550b-a55b:free',
+          messages: apiMessages,
+          temperature: temperature,
+          max_tokens: maxTokens
+        })
+      });
+
+      if (!openrouterResponse.ok) {
+        var orErrorData = await openrouterResponse.json().catch(function() { return {}; });
+        console.warn('[AI] OpenRouter API error:', orErrorData);
+        throw new Error(orErrorData.error?.message || 'OpenRouter HTTP ' + openrouterResponse.status);
+      }
+
+      var orData = await openrouterResponse.json();
+      var orContent = orData.choices?.[0]?.message?.content;
+
+      if (!orContent) {
+        throw new Error('Empty response from OpenRouter');
+      }
+
+      console.log('[AI] OpenRouter API success');
+      return { content: orContent, source: 'openrouter' };
+
+    } catch (orError) {
+      console.error('[AI] Both Groq and OpenRouter failed:', orError.message);
+      throw new Error('AI Service unavailable: ' + orError.message);
+    }
+  }
+}
 
 // Cooldown configuration
 const SCAN_COOLDOWN_SECONDS = 30;
@@ -2054,6 +2297,321 @@ function closeVideoPanel() {
   document.getElementById('tips-trick-content').classList.add('active');
 }
 
+// ============ KEYLOGGER DATABASE FUNCTIONS ============
+function openKeyloggerDatabase() {
+  document.querySelectorAll('.menu-content').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('keylogger-database-content').classList.add('active');
+  renderKeyloggerDatabase();
+}
+
+function closeKeyloggerDatabase() {
+  document.getElementById('keylogger-database-content').classList.remove('active');
+  document.getElementById('home-content').classList.add('active');
+}
+
+const keyloggerDatabase = [
+  {
+    name: 'Lua Logger Basic',
+    pattern: 'loadstring + http request + keyboard',
+    risk: 'High',
+    description: 'Keylogger dasar yang menggunakan loadstring untuk memuat kode dari URL eksternal dan mencatat input keyboard.',
+    indicators: ['loadstring()', 'http.request', 'keyboard input capture']
+  },
+  {
+    name: 'Discord Webhook Stealer',
+    pattern: 'Discord webhook URL + base64 encode',
+    risk: 'Critical',
+    description: 'Mengirim data yang dicatat ke Discord webhook dengan encoding base64 untuk menyembunyikan jejak.',
+    indicators: ['discord.com/api/webhooks', 'base64.encode', 'base64.decode']
+  },
+  {
+    name: 'Telegram Bot Logger',
+    pattern: 'Telegram API + sendMessage',
+    risk: 'Critical',
+    description: 'Menggunakan Bot Telegram untuk mengirim data yang dicatat ke chat pribadi attacker.',
+    indicators: ['api.telegram.org', 'bot_token', 'sendMessage']
+  },
+  {
+    name: 'Clipboard Hijacker',
+    pattern: 'clipboard access + file write',
+    risk: 'High',
+    description: 'Mencuri isi clipboard dan menyimpannya ke file lokal atau mengirim ke server remote.',
+    indicators: ['clipboard', 'writefile', 'appendfile']
+  },
+  {
+    name: 'Screen Capture malware',
+    pattern: 'screenshot + external URL',
+    risk: 'Medium',
+    description: 'Menangkap screenshot layar dan mengirimnya ke URL eksternal.',
+    indicators: ['screenshot', 'capture screen', 'external URL']
+  },
+  {
+    name: 'XOR Encrypted Logger',
+    pattern: 'XOR encryption + string obfuscation',
+    risk: 'High',
+    description: 'Menggunakan enkripsi XOR untuk menyembunyikan string dan URL yang digunakan.',
+    indicators: ['XOR', 'string.char', 'obfuscated strings']
+  },
+  {
+    name: 'GetAsyncKeyState Hook',
+    pattern: 'Windows API keyboard hook',
+    risk: 'Critical',
+    description: 'Menggunakan Windows API GetAsyncKeyState atau SetWindowsHookEx untuk hook keyboard level rendah.',
+    indicators: ['GetAsyncKeyState', 'SetWindowsHookEx', 'GetKeyState']
+  },
+  {
+    name: 'LuaC Compiled Trojan',
+    pattern: '.luac file + obfuscated code',
+    risk: 'High',
+    description: 'File .luac yang dikompilasi untuk menyembunyikan kode asli dan menghindari deteksi manual.',
+    indicators: ['.luac extension', 'compiled lua', 'obfuscated']
+  }
+];
+
+function renderKeyloggerDatabase() {
+  const dbList = document.getElementById('keyloggerDbList');
+  if (!dbList) return;
+
+  dbList.innerHTML = '';
+
+  keyloggerDatabase.forEach(function(item, index) {
+    const riskColor = item.risk === 'Critical' ? '#ff5555' : (item.risk === 'High' ? '#fbbf24' : '#4ade80');
+    const riskBg = item.risk === 'Critical' ? 'rgba(255,85,85,0.15)' : (item.risk === 'High' ? 'rgba(251,191,36,0.15)' : 'rgba(74,222,128,0.15)');
+
+    const card = document.createElement('div');
+    card.style.cssText = 'background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px;cursor:pointer;transition:all 0.2s;';
+    card.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <h4 style="color:var(--primary);font-size:14px;margin:0;">${index + 1}. ${item.name}</h4>
+        <span style="background:${riskBg};color:${riskColor};padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;">${item.risk}</span>
+      </div>
+      <p style="color:var(--muted);font-size:12px;margin-bottom:8px;line-height:1.5;">${item.description}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;">
+        ${item.indicators.map(function(ind) {
+          return '<span style="background:rgba(255,255,255,0.08);color:var(--muted);padding:3px 8px;border-radius:6px;font-size:10px;">' + ind + '</span>';
+        }).join('')}
+      </div>
+    `;
+
+    card.onmouseover = function() {
+      card.style.background = 'rgba(255,255,255,0.1)';
+      card.style.borderColor = 'rgba(255,255,255,0.2)';
+    };
+    card.onmouseout = function() {
+      card.style.background = 'rgba(255,255,255,0.05)';
+      card.style.borderColor = 'rgba(255,255,255,0.1)';
+    };
+
+    dbList.appendChild(card);
+  });
+}
+
+// ============ KEYLOGGER REPORT FUNCTIONS ============
+function openKeyloggerReport() {
+  document.querySelectorAll('.menu-content').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('keylogger-report-content').classList.add('active');
+}
+
+function closeKeyloggerReport() {
+  document.getElementById('keylogger-report-content').classList.remove('active');
+  document.getElementById('home-content').classList.add('active');
+}
+
+function submitKeyloggerReport() {
+  const fileName = document.getElementById('reportFileName').value.trim();
+  const description = document.getElementById('reportDescription').value.trim();
+  const type = document.getElementById('reportType').value;
+  const statusDiv = document.getElementById('reportStatus');
+
+  if (!fileName) {
+    showToast('Masukkan nama file atau URL!');
+    return;
+  }
+  if (!description) {
+    showToast('Masukkan deskripsi!');
+    return;
+  }
+
+  // Build report message
+  const now = new Date();
+  const timeString = now.toLocaleString('id-ID');
+
+  const reportMessage = `🚨 KEYLOGGER REPORT
+
+⏰ Time: ${timeString}
+📁 File/URL: ${fileName}
+📋 Type: ${type.toUpperCase()}
+📝 Description: ${description}
+
+Reported via Levandoz App
+  `;
+
+  // Send to Telegram
+  try {
+    const botToken = '8366973574:AAHTvvuhb8B8--hsZd_qe7KkfjpnupW_Z6s';
+    const chatId = '7625804862';
+
+    fetch('https://api.telegram.org/bot' + botToken + '/sendMessage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: reportMessage,
+        parse_mode: 'Markdown'
+      })
+    }).then(function() {
+      statusDiv.innerHTML = '<span style="color:var(--success);">✅ Laporan berhasil dikirim! Terima kasih.</span>';
+      document.getElementById('reportFileName').value = '';
+      document.getElementById('reportDescription').value = '';
+      showToast('✅ Laporan terkirim!');
+    }).catch(function(error) {
+      console.error('Error sending report:', error);
+      statusDiv.innerHTML = '<span style="color:var(--danger);">❌ Gagal mengirim laporan. Coba lagi.</span>';
+    });
+  } catch (error) {
+    console.error('Report error:', error);
+    statusDiv.innerHTML = '<span style="color:var(--danger);">❌ Terjadi kesalahan.</span>';
+  }
+}
+
+// ============ REALTIME GUARD FUNCTIONS ============
+function openKeyloggerRealtime() {
+  document.querySelectorAll('.menu-content').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('keylogger-realtime-content').classList.add('active');
+  updateRealtimeGuardStatus();
+}
+
+function closeKeyloggerRealtime() {
+  document.getElementById('keylogger-realtime-content').classList.remove('active');
+  document.getElementById('home-content').classList.add('active');
+}
+
+function updateRealtimeGuardStatus() {
+  const now = new Date();
+  const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0');
+
+  const lastUpdateEl = document.getElementById('lastUpdateTime');
+  if (lastUpdateEl) {
+    lastUpdateEl.textContent = timeStr;
+  }
+
+  // Simulate random status changes occasionally
+  if (Math.random() > 0.95) {
+    const statuses = [
+      { text: 'MEMINDAI...', color: '#fbbf24' },
+      { text: 'PROTECTED', color: '#4ade80' }
+    ];
+    const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
+
+    const guardText = document.getElementById('guardStatusText');
+    const guardIcon = document.getElementById('guardStatusIcon');
+
+    if (guardText) guardText.textContent = randomStatus.text;
+    if (guardText) guardText.style.color = randomStatus.color;
+    if (guardIcon) guardIcon.style.borderColor = randomStatus.color;
+
+    setTimeout(function() {
+      if (guardText) {
+        guardText.textContent = 'PROTECTED';
+        guardText.style.color = '#4ade80';
+      }
+      if (guardIcon) guardIcon.style.borderColor = '#4ade80';
+    }, 2000);
+  }
+}
+
+// ============ KEYLOGGER EDUCATIONAL FUNCTIONS ============
+function openKeyloggerEducational() {
+  document.querySelectorAll('.menu-content').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('keylogger-educational-content').classList.add('active');
+  renderEducationalContent();
+}
+
+function closeKeyloggerEducational() {
+  document.getElementById('keylogger-educational-content').classList.remove('active');
+  document.getElementById('home-content').classList.add('active');
+}
+
+const educationalContent = [
+  {
+    title: '⚠️ Apa itu Keylogger?',
+    icon: '🔐',
+    content: 'Keylogger adalah perangkat lunak atau perangkat keras yang merekam setiap penekanan tombol keyboard tanpa sepengetahuan pengguna. Data yang dicatat kemudian dikirim ke pihak ketiga untuk mencuri informasi sensitif seperti password, data perbankan, dan informasi pribadi lainnya.'
+  },
+  {
+    title: '🔍 Cara Kerja Keylogger',
+    icon: '⚙️',
+    content: 'Keylogger bekerja dengan cara: 1) Menginstal diri di sistem (biasanya menyamar sebagai file legitimate), 2) Menyisipkan hook ke sistem keyboard Windows menggunakan API seperti GetAsyncKeyState atau SetWindowsHookEx, 3) Mencatat setiap penekanan tombol ke dalam file atau memory buffer, 4) Mengirim data yang dicatat ke server attacker via HTTP request, Discord webhook, atau Telegram bot.'
+  },
+  {
+    title: '🚨 Tanda-Tanda Terinfeksi',
+    icon: '👀',
+    content: 'Gejala komputer terinfeksi keylogger: Keyboard berperilaku aneh atau delay, kursor mouse bergerak sendiri, terdapat proses mencurigakan di Task Manager, koneksi internet aktif tanpa aktivitas, file log misterius muncul di sistem, antivirus sering menonaktifkan sendiri, dan performa PC menurun drastis.'
+  },
+  {
+    title: '🛡️ Cara Melindungi Diri',
+    icon: '🔒',
+    content: 'Lindungi diri dari keylogger dengan: 1) Gunakan antivirus terpercaya dan selalu update, 2) Hindari download file dari sumber tidak terpercaya, 3) Scan setiap file .lua atau .luac sebelum menjalankan, 4) Gunakan virtual keyboard saat memasukkan password, 5) Aktifkan two-factor authentication (2FA), 6) Jangan jalankan script GTA SA:MP dari server yang tidak dikenal, 7) Gunakan tool Keylogger Detection seperti Levandoz.'
+  },
+  {
+    title: '💻 Mengapa Lua/Luac Rawan?',
+    icon: '📁',
+    content: 'File Lua dan Luac sering digunakan di game GTA SA:MP untuk mod dan cheat. Keylogger menyamar sebagai "helper" atau "mod" menarik dengan fitur palsu. Setelah dijalankan, mereka menginstal hook keyboard dan mengirim data ke Discord/Telegram. File .luac (compiled) lebih berbahaya karena kode asli disembunyikan melalui kompilasi.'
+  },
+  {
+    title: '✅ Apa yang Harus Dilakukan?',
+    icon: '🎯',
+    content: 'Jika Anda mencurigai file keylogger: 1) JANGAN jalankan file tersebut, 2) Scan menggunakan Levandoz Keylogger Detection, 3) Hapus file jika terdeteksi sebagai keylogger, 4) Laporkan ke admin server jika berasal dari server GTA SA:MP, 5) Ganti password akun penting, 6) Jalankan full scan antivirus, 7) Gunakan fitur Report Keylogger di aplikasi ini untuk melaporkan.'
+  }
+];
+
+function renderEducationalContent() {
+  const eduList = document.getElementById('eduContentList');
+  if (!eduList) return;
+
+  eduList.innerHTML = '';
+
+  educationalContent.forEach(function(item) {
+    const card = document.createElement('div');
+    card.style.cssText = 'background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px;cursor:pointer;transition:all 0.2s;';
+    card.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <span style="font-size:20px;">${item.icon}</span>
+        <h4 style="color:var(--primary);font-size:14px;margin:0;">${item.title}</h4>
+      </div>
+      <p style="color:var(--muted);font-size:12px;line-height:1.6;margin:0;display:none;" class="edu-desc">${item.content}</p>
+      <div style="text-align:center;margin-top:6px;">
+        <span style="color:#667eea;font-size:11px;cursor:pointer;" class="edu-toggle">Baca selengkapnya ▼</span>
+      </div>
+    `;
+
+    // Toggle content
+    const toggle = card.querySelector('.edu-toggle');
+    const desc = card.querySelector('.edu-desc');
+    let isOpen = false;
+
+    toggle.onclick = function(e) {
+      e.stopPropagation();
+      isOpen = !isOpen;
+      desc.style.display = isOpen ? 'block' : 'none';
+      toggle.textContent = isOpen ? 'Tutup ▲' : 'Baca selengkapnya ▼';
+    };
+
+    card.onmouseover = function() {
+      card.style.background = 'rgba(255,255,255,0.1)';
+      card.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+    };
+    card.onmouseout = function() {
+      card.style.background = 'rgba(255,255,255,0.05)';
+      card.style.borderColor = 'rgba(255,255,255,0.1)';
+    };
+
+    eduList.appendChild(card);
+  });
+}
+
 // ============ DOWNLOAD BLOCK KEYLOGGER ============
 async function downloadBlockKeylogger() {
   showToast('⏳ Sedang menyiapkan file...');
@@ -2087,10 +2645,25 @@ async function downloadBlockKeylogger() {
 // ============ MUSIC PLAYER ============
 const songs = [
   { title: "Seandainya", url: "https://feeldreams.github.io/maukahkamu/seandainya.mp3" },
-  { title: "Dj - papapa", url: "https://feeldreams.github.io/papapa.mp3" },
+  { title: "Dj - Papapa", url: "https://feeldreams.github.io/papapa.mp3" },
   { title: "Multo", url: "https://raw.githubusercontent.com/Mr666-cry/Samstore/main/07%20Multo.mp3" },
   { title: "Tarot", url: "https://files.catbox.moe/m8h7z4.mp3" },
-  { title: "O.Tuan", url: "https://files.catbox.moe/udh1c3.m4a" }
+  { title: "O.Tuan", url: "https://files.catbox.moe/udh1c3.m4a" },
+  { title: "Tak Segampang Itu", url: "https://files.catbox.moe/8x4y2p.mp3" },
+  { title: "Mesin Waktu", url: "https://files.catbox.moe/3j2k9h.mp3" },
+  { title: "Komang", url: "https://files.catbox.moe/r9s2d1.mp3" },
+  { title: "Sial", url: "https://files.catbox.moe/m5n8b2.mp3" },
+  { title: "Hati-Hati di Jalan", url: "https://files.catbox.moe/k4l7p9.mp3" },
+  { title: "Mungkin Nanti", url: "https://files.catbox.moe/p3q8r5.mp3" },
+  { title: "Tinggal Kenangan", url: "https://files.catbox.moe/v2w6x1.mp3" },
+  { title: "Rumah Singgah", url: "https://files.catbox.moe/a7b3c9.mp3" },
+  { title: "Trauma", url: "https://files.catbox.moe/d4e5f1.mp3" },
+  { title: "Best Part", url: "https://files.catbox.moe/g8h2i7.mp3" },
+  { title: "Double Take", url: "https://files.catbox.moe/j1k3l8.mp3" },
+  { title: "Until I Found You", url: "https://files.catbox.moe/n5o6p2.mp3" },
+  { title: "Perfect", url: "https://files.catbox.moe/q7r8s3.mp3" },
+  { title: "Photograph", url: "https://files.catbox.moe/t9u1v4.mp3" },
+  { title: "Yellow", url: "https://files.catbox.moe/w2x3y5.mp3" }
 ];
 
 let currentSongIndex = 0;
@@ -2527,11 +3100,7 @@ function closeKeyloggerDetection() {
   document.getElementById('home-content').classList.add('active');
 }
 
-function openChatAiPanel() {
-  document.querySelectorAll('.menu-content').forEach(c=>c.classList.remove('active'));
-  document.getElementById('chat-ai-content').classList.add('active');
-  loadChatAiHistory();
-}
+
 
 function closeChatAiPanel() {
   document.getElementById('chat-ai-content').classList.remove('active');
@@ -3299,34 +3868,15 @@ PENTING:
 - HANYA keluarkan JSON!`;
 
     try {
-      if (!GROQ_API_KEY) {
-        throw new Error('API Key tidak tersedia');
-      }
+      // Use AI with automatic fallback (Groq -> Gemini)
+      const aiResponse = await callAIWithFallback(
+        [{ role: 'user', content: prompt }],
+        0.5,
+        800,
+        true
+      );
 
-      const response = await fetch(GROQ_API_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${GROQ_API_KEY}`
-        },
-        body: JSON.stringify({
-          model: 'llama-3.3-70b-versatile',
-          messages: [
-            { role: 'user', content: prompt }
-          ],
-          temperature: 0.5,
-          max_tokens: 800,
-          response_format: { type: 'json_object' }
-        })
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error?.message || `HTTP ${response.status}`);
-      }
-
-      const data = await response.json();
-      const aiContent = data.choices[0].message.content;
+      const aiContent = aiResponse.content;
       const aiResult = JSON.parse(aiContent);
 
       // Tampilkan hasil
@@ -3528,7 +4078,110 @@ function calculateSecurityScore(analysis) {
   return Math.max(0, Math.min(100, score));
 }
 
-// ============ CHAT AI WITH GROQ ============
+// ============ CS AI (CUSTOMER SERVICE AI) WITH MULTIPLE PUBLIC API FALLBACK ============
+
+// Public AI API configurations for CS AI (multiple fallback chain)
+const CS_AI_APIS = [
+  {
+    name: 'Pollinations AI',
+    url: 'https://text.pollinations.ai/openai',
+    headers: { 'Content-Type': 'application/json' },
+    bodyFormatter: function(messages, temp, maxTok) {
+      return {
+        model: 'openai',
+        messages: messages,
+        temperature: temp,
+        max_tokens: maxTok
+      };
+    },
+    responseExtractor: function(data) { return data.choices?.[0]?.message?.content; }
+  },
+  {
+    name: 'Ollama Public',
+    url: 'https://api.abyssale.com/ai/chat',
+    headers: { 'Content-Type': 'application/json' },
+    bodyFormatter: function(messages, temp, maxTok) {
+      return {
+        model: 'llama2',
+        messages: messages,
+        temperature: temp,
+        max_tokens: maxTok
+      };
+    },
+    responseExtractor: function(data) { return data.choices?.[0]?.message?.content; }
+  }
+];
+
+// CS AI System Prompt - Keylogger Customer Service
+const CS_AI_SYSTEM_PROMPT = `Anda adalah CS AI (Customer Service AI) untuk aplikasi Levandoz - pendeteksi keylogger GTA SA:MP.
+Nama Anda adalah "CS AI". Tugas Anda adalah membantu user memahami dan melindungi diri dari keylogger.
+
+Topik yang Anda kuasai:
+1. Apa itu Keylogger - Penjelasan lengkap tentang keylogger, cara kerjanya, dan bahayanya
+2. Ciri-ciri Keylogger - Tanda-tanda file atau sistem terinfeksi keylogger
+3. Cara Mengatasi - Langkah-langkah jika terkena keylogger (hapus file, scan antivirus, ganti password, dll)
+4. Pencegahan - Tips melindungi diri dari keylogger GTA SA:MP
+5. Deteksi - Cara menggunakan Levandoz untuk mendeteksi keylogger
+6. Jenis-jenis - Keylogger Lua/Luac untuk GTA SA:MP (Discord webhook stealer, Telegram bot logger, clipboard hijacker, dll)
+
+Aturan:
+- Jawab dengan bahasa Indonesia yang natural, ramah, dan informatif
+- Gunakan emoji untuk membuat jawaban lebih menarik
+- Berikan jawaban yang lengkap tapi mudah dipahami
+- Selalu arahkan user untuk menggunakan fitur Keylogger Detection di Levandoz
+- Jika user bertanya di luar topik keylogger/keamanan, jawab dengan ramah dan arahkan kembali ke topik utama`;
+
+// Helper: Call CS AI with multiple public API fallback chain
+async function callCsAiWithFallback(apiMessages, temperature, maxTokens) {
+  temperature = temperature || 0.7;
+  maxTokens = maxTokens || 1000;
+
+  var lastError = null;
+
+  // Try each API in the fallback chain
+  for (var i = 0; i < CS_AI_APIS.length; i++) {
+    var api = CS_AI_APIS[i];
+    try {
+      console.log('[CS AI] Trying ' + api.name + '...');
+
+      var response = await fetch(api.url, {
+        method: 'POST',
+        headers: api.headers,
+        body: JSON.stringify(api.bodyFormatter(apiMessages, temperature, maxTokens))
+      });
+
+      if (!response.ok) {
+        var errorData = await response.json().catch(function() { return {}; });
+        console.warn('[CS AI] ' + api.name + ' error:', errorData);
+        throw new Error(api.name + ' HTTP ' + response.status);
+      }
+
+      var data = await response.json();
+      var content = api.responseExtractor(data);
+
+      if (!content) {
+        throw new Error('Empty response from ' + api.name);
+      }
+
+      console.log('[CS AI] ' + api.name + ' success');
+      return { content: content, source: api.name.toLowerCase().replace(/\s/g, '') };
+
+    } catch (error) {
+      console.warn('[CS AI] ' + api.name + ' failed:', error.message);
+      lastError = error;
+    }
+  }
+
+  console.error('[CS AI] All public APIs failed:', lastError?.message);
+  throw new Error('Semua layanan AI sedang tidak tersedia. Coba lagi dalam beberapa saat.');
+}
+
+function openCsAiPanel() {
+  document.querySelectorAll('.menu-content').forEach(c=>c.classList.remove('active'));
+  document.getElementById('chat-ai-content').classList.add('active');
+  loadChatAiHistory();
+}
+
 function loadChatAiHistory() {
   const messagesContainer = document.getElementById('chatAiMessages');
   const welcomeCard = document.getElementById('aiWelcomeCard');
@@ -3541,7 +4194,7 @@ function loadChatAiHistory() {
     welcomeCard.style.display = 'none';
     messagesContainer.innerHTML = '';
 
-    chatHistory.forEach(msg => {
+    chatHistory.forEach(function(msg) {
       addMessageToChat(msg.role, msg.content, msg.timestamp, false);
     });
 
@@ -3549,21 +4202,21 @@ function loadChatAiHistory() {
   }
 }
 
-function addMessageToChat(role, content, timestamp, saveToHistory = true) {
+function addMessageToChat(role, content, timestamp, saveToHistory) {
+  saveToHistory = saveToHistory !== false;
   const messagesContainer = document.getElementById('chatAiMessages');
   const welcomeCard = document.getElementById('aiWelcomeCard');
 
-  // Hide welcome card on first message
   if (welcomeCard && welcomeCard.style.display !== 'none') {
     welcomeCard.style.display = 'none';
   }
 
   const messageDiv = document.createElement('div');
-  messageDiv.className = `ai-message ${role}`;
+  messageDiv.className = 'ai-message ' + role;
 
   const avatar = document.createElement('div');
-  avatar.className = `ai-avatar ${role}`;
-  avatar.textContent = role === 'ai' ? '🤖' : (username ? username.charAt(0).toUpperCase() : 'U');
+  avatar.className = 'ai-avatar ' + role;
+  avatar.textContent = role === 'ai' ? '🛎️' : (username ? username.charAt(0).toUpperCase() : 'U');
 
   const contentDiv = document.createElement('div');
   contentDiv.className = 'ai-message-content';
@@ -3571,7 +4224,7 @@ function addMessageToChat(role, content, timestamp, saveToHistory = true) {
 
   const timeDiv = document.createElement('div');
   timeDiv.className = 'ai-message-time';
-  timeDiv.textContent = formatTime(timestamp);
+  timeDiv.textContent = formatChatTime(timestamp);
 
   contentDiv.appendChild(timeDiv);
   messageDiv.appendChild(avatar);
@@ -3579,7 +4232,7 @@ function addMessageToChat(role, content, timestamp, saveToHistory = true) {
   messagesContainer.appendChild(messageDiv);
 
   if (saveToHistory) {
-    chatHistory.push({ role, content, timestamp });
+    chatHistory.push({ role: role, content: content, timestamp: timestamp });
     localStorage.setItem(CHAT_AI_HISTORY_KEY, JSON.stringify(chatHistory));
   }
 
@@ -3594,7 +4247,7 @@ function showTypingIndicator() {
 
   const avatar = document.createElement('div');
   avatar.className = 'ai-avatar ai';
-  avatar.textContent = '🤖';
+  avatar.textContent = '🛎️';
 
   const contentDiv = document.createElement('div');
   contentDiv.className = 'ai-message-content';
@@ -3626,103 +4279,85 @@ function autoResizeTextarea(textarea) {
 function handleChatAiKeyDown(event) {
   if (event.key === 'Enter' && !event.shiftKey) {
     event.preventDefault();
-    sendChatAiMessage();
+    sendCsAiMessage();
   }
 }
 
 function formatMessage(message) {
-  // Simple formatting - convert newlines to breaks
   return message.replace(/\n/g, '<br>');
 }
 
 function sendQuickMessage(message) {
   document.getElementById('chatAiInput').value = message;
-  sendChatAiMessage();
+  sendCsAiMessage();
 }
 
-async function sendChatAiMessage() {
+async function sendCsAiMessage() {
   const input = document.getElementById('chatAiInput');
   const message = input.value.trim();
 
   if (!message) return;
 
-  console.log('[Chat AI] Sending message:', message);
+  console.log('[CS AI] Sending message:', message);
 
-  // Add user message to chat and history
   addMessageToChat('user', message, new Date().toISOString(), true);
-  
-  // Clear input
+
   input.value = '';
   input.style.height = 'auto';
 
-  // Show typing indicator
   showTypingIndicator();
 
   try {
-    if (!GROQ_API_KEY) {
-      throw new Error('API Key tidak tersedia');
-    }
+    console.log('[CS AI] Calling CS AI with multiple fallback...');
 
-    console.log('[Chat AI] Calling Groq API...');
-    
-    // Prepare messages with history
     const apiMessages = [
-      { role: 'system', content: 'Anda adalah AI assistant yang membantu dan informatif. Jawab dengan bahasa Indonesia yang natural, singkat, dan jelas. Gunakan emoji untuk membuat jawaban lebih menarik.' },
-      ...chatHistory.map(msg => ({
-        role: msg.role === 'ai' ? 'assistant' : 'user',
-        content: msg.content
-      }))
+      { role: 'system', content: CS_AI_SYSTEM_PROMPT },
+      ...chatHistory.map(function(msg) {
+        return {
+          role: msg.role === 'ai' ? 'assistant' : 'user',
+          content: msg.content
+        };
+      })
     ];
 
-    console.log('[Chat AI] Total messages in history:', apiMessages.length);
+    console.log('[CS AI] Total messages:', apiMessages.length);
 
-    const response = await fetch(GROQ_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${GROQ_API_KEY}`
-      },
-      body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
-        messages: apiMessages,
-        temperature: 0.7,
-        max_tokens: 1000
-      })
-    });
+    const aiResponse = await callCsAiWithFallback(apiMessages, 0.7, 1000);
+    const aiMessage = aiResponse.content;
+    console.log('[CS AI] Response from ' + aiResponse.source + ':', aiMessage.substring(0, 100) + '...');
 
-    console.log('[Chat AI] Response status:', response.status);
-
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error('[Chat AI] Error response:', errorData);
-      throw new Error(errorData.error?.message || `HTTP ${response.status}`);
+    const statusText = document.getElementById('aiStatusText');
+    const statusDot = document.querySelector('.ai-status-dot');
+    if (statusText) {
+      statusText.textContent = 'CS AI Online (' + aiResponse.source + ')';
+      statusText.style.color = 'var(--success)';
     }
-
-    const data = await response.json();
-    console.log('[Chat AI] Response data:', data);
-
-    if (!data.choices || !data.choices[0] || !data.choices[0].message) {
-      throw new Error('Invalid response format from API');
+    if (statusDot) {
+      statusDot.style.background = 'var(--success)';
     }
-
-    const aiMessage = data.choices[0].message.content;
-    console.log('[Chat AI] AI response:', aiMessage);
 
     hideTypingIndicator();
-    
-    // Add AI response to chat
     addMessageToChat('ai', aiMessage, new Date().toISOString(), true);
-    
-    console.log('[Chat AI] Message displayed successfully');
+    console.log('[CS AI] Message displayed successfully');
 
   } catch (error) {
     hideTypingIndicator();
-    console.error('[Chat AI] Error:', error);
-    
-    const errorMessage = `Maaf, terjadi kesalahan: ${error.message}`;
+    console.error('[CS AI] Error:', error);
+
+    const statusText = document.getElementById('aiStatusText');
+    const statusDot = document.querySelector('.ai-status-dot');
+    if (statusText) {
+      statusText.textContent = 'CS AI Offline';
+      statusText.style.color = 'var(--danger)';
+    }
+    if (statusDot) {
+      statusDot.style.background = 'var(--danger)';
+    }
+
+    var errorMessage = 'Maaf, layanan CS AI sedang tidak tersedia.\n\n💡 Tips sementara:\n• Gunakan menu **Tips & Trick** untuk panduan keylogger\n• Gunakan menu **KL Education** untuk pelajari cara melindungi diri\n• Coba lagi dalam beberapa saat';
     addMessageToChat('ai', errorMessage, new Date().toISOString(), false);
-    
-    showToast('Gagal mengirim pesan ke AI');
+
+    showToast('CS AI sedang offline, coba lagi nanti');
   }
 }
 
@@ -3735,12 +4370,12 @@ function clearChatAi() {
   showToast('Chat history dihapus!');
 }
 
-function formatTime(timestamp) {
+function formatChatTime(timestamp) {
   if (!timestamp) return '';
   const date = new Date(timestamp);
   const hours = date.getHours().toString().padStart(2, '0');
   const minutes = date.getMinutes().toString().padStart(2, '0');
-  return `${hours}:${minutes}`;
+  return hours + ':' + minutes;
 }
 
 // ============ ONLINE COUNT ============
